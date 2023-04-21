@@ -5,14 +5,12 @@
 }
 body{
   background-color: #524b7d;
-  display:flex;
-  justify-content:center;
 }
 .container{
-  margin-top: 3%;
-  position: absolute;
   width: 95vw;
   height:97vh;;
+  margin-top: 1.5vh;
+  margin-left: 2.5vw;
   display:flex;
   flex-direction: column;
   padding: 0 10px 0 10px;
@@ -22,14 +20,17 @@ body{
  display:flex;
  flex-direction: column;
  background-color:#fff;
- box-shadow: 5px 5px rgb(159, 136, 227);
+ box-shadow: 7px 7px rgb(175, 154, 236);
+ width: 100%;
+ height:100%
 }
 header{
  display: flex;
  justify-content: center;
  align-items: center;
- flex: 1;
+ flex:2;
  background-color:rgb(46, 232, 9);
+ font-size: 1.5em;
 }
 section{
   display: flex;
@@ -49,7 +50,7 @@ section{
   text-align:start;
   flex: 1;
   background-color: #fff;
-  max-height: 50%;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +67,7 @@ footer{
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -73,17 +75,52 @@ footer{
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+  .text{
+    font-size: 1.2em;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
- 
+  .container{
+    width:75vw;
+    height:75vh;
+    margin-top: 12vh;
+    margin-left: 12vw;
+   }
+  section{
+    flex-direction: row;
+  }
+  .img-box{
+    min-height: 90%;
+    position: relative;
+   }
+   .text{
+     min-height: 90%;
+     justify-content: center;
+     align-items: start;
+     font-size: 1em;
+   }
+   img{
+    position: absolute;
+    object-fit:cover;
+   }
 } 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
- 
+  .container{
+    width:65vw;
+    height:80vh;
+    margin-top: 10vh;
+    margin-left: 17.5vw;
+   }
+   .text{
+    font-size: 1.1em;
+   }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .text{
+    font-size: 1.25em;
+  }
 
 }
